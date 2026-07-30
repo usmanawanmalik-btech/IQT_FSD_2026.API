@@ -22,9 +22,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D97F069B-ECE3-418C-9A2B-80CC205A16AC}"
 	ProjectSection(SolutionItems) = preProject
 		.dockerignore = .dockerignore
-		azure-pipelines.yml = azure-pipelines.yml
-		Dockerfile = Dockerfile
-		NuGet.Config = NuGet.Config
 	EndProjectSection
 EndProject
 Global
