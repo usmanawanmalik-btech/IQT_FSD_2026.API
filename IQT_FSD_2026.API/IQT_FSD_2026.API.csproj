@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>b9848084-c746-477d-b34b-8183adf0b633</UserSecretsId>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    <DockerfileContext>..\..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Btech.Package.Logger" Version="3.11.82.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="9.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="9.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="9.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Databases\IQT_FSD_2026.EFMigration.MySQL\IQT_FSD_2026.EFMigration.MySQL.csproj" />
+    <ProjectReference Include="..\Databases\IQT_FSD_2026.EFMigration.PostgreSQL\IQT_FSD_2026.EFMigration.PostgreSQL.csproj" />
+    <ProjectReference Include="..\Databases\IQT_FSD_2026.EFMigration.SQLServer\IQT_FSD_2026.EFMigration.SQLServer.csproj" />
+    <ProjectReference Include="..\IQT_FSD_2026.Application\IQT_FSD_2026.Application.csproj" />
+  </ItemGroup>
+
+</Project>

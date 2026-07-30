@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations - Copy\**" />
+    <EmbeddedResource Remove="Migrations - Copy\**" />
+    <None Remove="Migrations - Copy\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ef_migration_commands - Copy.ini" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\IQT_FSD_2026.Infrastructure\IQT_FSD_2026.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
